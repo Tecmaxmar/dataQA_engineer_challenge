@@ -81,7 +81,7 @@ pip install -r requirements.txt
 ## Dashboard
 
 <h1 align="center">  
-<img src="./IMG/dashboard.jpg" alt="arquitectura" >
+<img src="./IMG/dashboard.png" alt="Dashboard" >
 </h1>
 <br>
 
