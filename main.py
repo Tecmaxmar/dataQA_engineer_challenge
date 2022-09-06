@@ -3,15 +3,16 @@ import pandas as pd
 from datetime import datetime
 import re
 import numpy as np
+import variables
 
 ################################################################
-source = os.environ['source']
-destination = os.environ['destination']
-desc_fields = os.environ['desc_fields']
-not_null_fields = os.environ['not_null_fields']
 
-areas = os.environ['areas']
-file_freshness = os.environ['file_freshness']
+source = variables.source_folder
+destination = variables.destination
+desc_fields = variables.desc_fields
+not_null_fields = variables.not_null_fields
+areas = variables.areas
+file_freshness = variables.file_freshness
 
 file_report_header = 'file;total_rows;null_rows;bad_phone_rows;bad_correctness_rows;bad_uniqueness_rows;is_fresh;\n'
 # I have many different regex for different kind of phone validations
@@ -24,6 +25,7 @@ rgx_phone = re.compile('\+?\d[\d -]{8,12}\d')
 
 
 ################################################################
+
 ## Check functions ##
 
 #The Date validated here is the actual date of the file, not the name of the file
