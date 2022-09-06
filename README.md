@@ -55,6 +55,7 @@ These are the features I have added to the original request
 - Check Uniqueness: All rows must be unique. Duplicated rows will be deleted.
 - Check freshness: In addition to checking the date the file is copied, we check the name of the file that has the date.
 - File report: This report contains file format and file quality features. This report allows to create the [Dashboard](#Dashboard) showed below
+- Dahboard to control the process result
 
 ### Report Module
 The report Module produces the reports, metadata and result files
@@ -83,6 +84,7 @@ pip install -r requirements.txt
 
 
 ## Dashboard
+This Dashboard is produced by the result of the file report. It allows the user to quickly identify the problems main causes
 
 <h1 align="center">  
 <img src="./IMG/dashboard.png" alt="Dashboard" >
